@@ -39,3 +39,9 @@ output "resource_group_id" {
   description = "ID do Resource Group criado"
   value       = azurerm_resource_group.rg.id
 }
+
+
+resource "azurerm_resource_group" "rgfeature" {
+    name = teste
+    location = var.location
+}
